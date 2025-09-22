@@ -1,44 +1,25 @@
-name: environment
+name: gpu_env
 channels:
   - pytorch
-  - michael_wild
   - defaults
 dependencies:
-  - python=3.6.6
-  - pip=10.0.1
-  - cudatoolkit=9.0
-  - cudnn=7.1.4
-  - pytorch=1.2.0
-  - torchvision=0.4.0
-  - tensorflow=1.10.0
-  - numpy=1.15.1
-  - scipy=1.1.0
-  - matplotlib=2.2.3
-  - opencv=3.4.2
-  - opencv-contrib=3.3.1
-  - keras=2.2.2
-  - scikit-learn=0.19.1
+  - python=3.8
+  - cudatoolkit=11.3
+  - pytorch=1.10.0
+  - torchvision=0.11.1
+  - numpy
+  - scipy
+  - matplotlib
+  - pandas
   - jupyter
-  - notebook
   - ipykernel
   - ipywidgets
-  - pandas
-  - h5py
+  - scikit-learn
   - pillow
-  - pyyaml
-  - protobuf
-  - six
-  - absl-py
-  - astor
-  - termcolor
-  - grpcio
-  - werkzeug
-  - markdown
-  - setuptools
-  - wheel
-  - tqdm
-  - seaborn
-  - imageio
+  - pip
   - pip:
-      - keras-preprocessing==1.0.2
-      - keras-applications==1.0.4
+      - tensorflow==2.4.1
+      - keras==2.4.3
+      - tqdm
+      - seaborn
+      - imageio
